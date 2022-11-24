@@ -52,7 +52,7 @@ $(function() {
             let data = $("#register").serialize();
             $.ajax({
                 method: 'POST',
-                url: "http://www.liulongbin.top:3007/api/reguser",
+                url: "/api/reguser",
                 data: data,
                 success: function(res) {
                     if (res.status == 0) {
@@ -71,7 +71,7 @@ $(function() {
         let data = $("#login").serialize();
         $.ajax({
             method: 'POST',
-            url: "http://www.liulongbin.top:3007/api/login",
+            url: "/api/login",
             data: data,
             success: function(res) {
                 if (res.status == 0) {

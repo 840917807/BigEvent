@@ -31,7 +31,7 @@
                         <dd><a href="">重置密码</a></dd>
                     </dl>
                 </li>
-                <li class="layui-nav-item"><a href=""><span class="iconfont icon-tuichu"></span> 退出</a></li>
+                <li class="layui-nav-item"><a href="javascript:;" id="tuichu"><span class="iconfont icon-tuichu" ></span> 退出</a></li>
             </ul>
         </div>
 
@@ -40,7 +40,7 @@
                 <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
                 <ul class="layui-nav layui-nav-tree" lay-filter="test" lay-shrink="all">
                     <li class="layui-nav-item avatar">
-                        <img src="//tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg" class="layui-nav-img"> <span class="avaterText">A</span> 欢迎xxx
+                        <img src="//tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg" class="layui-nav-img"> <span class="avaterText">A</span> <span id="username">欢迎xxx</span>
                     </li>
                     <li class="layui-nav-item layui-this">
                         <a class="" href="javascript:;"><span class="iconfont icon-home"></span> 首页</a>
@@ -80,10 +80,11 @@
     <script src="./assets/lib/layui/layui.all.js"></script>
     <!-- 导入jquery.js -->
     <script src="./assets/lib/jquery.js"></script>
+    <!-- 导入baseAPI.js -->
+    <script src="./assets/js/baseAPI.js"></script>
     <!-- 导入本页面的js -->
     <script src="./assets/js/index.js"></script>
-    <!-- 导入baseAPI.js -->
-    <!-- <script src="./assets/js/"></script> -->
+
 
     <script>
         //JS 
